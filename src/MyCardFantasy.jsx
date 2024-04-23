@@ -7,7 +7,7 @@ function MyCardFantasy() {
     <>
       {fantasy.map((book) => {
         return (
-          <Card className="my-3">
+          <Card key={`book-${book.asin}`} className="my-3">
             <Card.Img variant="top" src={book.img} />
             <Card.Body>
               <Card.Title>{book.title}</Card.Title>
